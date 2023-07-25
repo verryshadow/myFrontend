@@ -5,7 +5,7 @@ This document provides a quick How-To-Start guide to the CODEX UI.
 # General Angular knowledge
 ## Getting started with Angular
 <a href="https://angular.io/start" target="_blank">https://angular.io/start </a>
-### Generate a component
+### Generate a component 
 ```
 ng g c modules/querybuilder/components/[name-of-component]
 ```

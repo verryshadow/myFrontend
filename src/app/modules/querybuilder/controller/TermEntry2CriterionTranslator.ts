@@ -24,6 +24,15 @@ export class TermEntry2CriterionTranslator {
 
     criterion.display = termEntry.display
     criterion.entity = termEntry.entity
+
+    /* ------------ modified ----------------- */
+    termEntry.valueDefinitions.forEach((valueDefinition) => {
+      criterion.valueFilters.push(this.createValueFilter(valueDefinition))
+    })
+    criterion.termCodes.push(termEntry.termCode)
+    criterion.attributeFilters = undefined
+
+/* ------------ ORIGINAL -----------------
     if (this.queryVersion === 'v1') {
       termEntry.valueDefinitions.forEach((valueDefinition) => {
         criterion.valueFilters.push(this.createValueFilter(valueDefinition))
@@ -42,6 +51,7 @@ export class TermEntry2CriterionTranslator {
         criterion.termCodes.push(termCode)
       })
     }
+*/
     criterion.children = termEntry.children
     criterion.timeRestriction = this.createTimeRestriction(termEntry)
     criterion.optional = termEntry.optional

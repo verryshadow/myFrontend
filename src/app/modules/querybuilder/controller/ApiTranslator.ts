@@ -20,7 +20,6 @@ export class ApiTranslator {
     } else {
       result.exclusionCriteria = undefined
     }
-
     return result
   }
 
@@ -120,7 +119,7 @@ export class ApiTranslator {
             attribute.attributeCode = attribute.attributeDefinition.attributeCode
           })
         }
-        this.editTimeRestrictionsV2(criterionV2)
+        // this.editTimeRestrictionsV2(criterionV2)
         this.removeNonApiFieldsV2(criterionV2)
         innerArrayV2.push(criterionV2)
       })

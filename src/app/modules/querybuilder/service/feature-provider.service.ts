@@ -48,6 +48,8 @@ export class FeatureProviderService {
     this.renderer.addClass(document.getElementById('header-logo'), newTheme)
     this.renderer.removeClass(document.getElementById('footer-logo'), oldTheme)
     this.renderer.addClass(document.getElementById('footer-logo'), newTheme)
+    this.renderer.removeClass(document.getElementById('funder-logo'), oldTheme)
+    this.renderer.addClass(document.getElementById('funder-logo'), newTheme)
     if (newTheme === 'codexTheme') {
       document
         .getElementById('header-logo')
@@ -55,12 +57,31 @@ export class FeatureProviderService {
       document.getElementById('header-logo').setAttribute('alt', 'CODEX Logo')
       document.getElementById('footer-logo').setAttribute('src', 'assets/img/NUM_Logo.png')
       document.getElementById('footer-logo').setAttribute('alt', 'NUM Logo')
+
+      document.getElementById('funder-logo').setAttribute('src', 'assets/img/bmbf-gef-mit.png')
+      document.getElementById('funder-logo').setAttribute('alt', 'BMBF-LOGO Logo')
     }
     if (newTheme === 'abideTheme') {
       document.getElementById('header-logo').setAttribute('src', 'assets/img/Abide_MI_cropped.jpg')
       document.getElementById('header-logo').setAttribute('alt', 'ABIDE Logo')
       document.getElementById('footer-logo').setAttribute('src', 'assets/img/Abide_MI_cropped.jpg')
       document.getElementById('footer-logo').setAttribute('alt', 'MII Logo')
+
+      document.getElementById('funder-logo').setAttribute('src', 'assets/img/bmbf-gef-mit.png')
+      document.getElementById('funder-logo').setAttribute('alt', 'BMBF-LOGO Logo')
+
+
+    }
+    if (newTheme === 'sbaTheme') {
+      document
+        .getElementById('header-logo')
+        .setAttribute('src', 'assets/img/sba-research-shared.jpg')
+      document.getElementById('header-logo').setAttribute('alt', 'SBA Logo')
+      document.getElementById('footer-logo').setAttribute('src', 'assets/img/sba-research-shared.jpg')
+      document.getElementById('footer-logo').setAttribute('alt', 'small SBA Logo')
+
+      document.getElementById('funder-logo').setAttribute('src', 'assets/img/Screen4Care.png')
+      document.getElementById('funder-logo').setAttribute('alt', 's4c Logo')
     }
   }
 }

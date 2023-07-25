@@ -29,7 +29,8 @@ export class ResultSimpleComponent implements OnInit {
 
   openDialogResultDetails(): void {
     const dialogConfig = new MatDialogConfig<ResultDetailsDialogComponentData>()
-
+    console.log("this is the result, what the frontend receives:")
+    console.log(this.result)
     dialogConfig.disableClose = true
     dialogConfig.autoFocus = true
     dialogConfig.data = {

@@ -6,7 +6,7 @@
     "baseUrl": "/api"
   },
   "uiBackendApi": {
-    "baseUrl": "http://localhost:8091/api/v1"
+    "baseUrl": "http://localhost:8090/api/v1"
   },
   "auth": {
     "baseUrl": "http://localhost:8080",
@@ -14,8 +14,8 @@
     "clientId": "feasibility-gui"
   },
   "legal": {
-    "version": "0.9.0",
-    "copyrightOwner": "CODEX Team"
+    "version": "0.9.1",
+    "copyrightOwner": "TEST CODEX Team"
   },
   "features": {
     "v2": {
@@ -26,21 +26,21 @@
     },
     "extra": {
       "displayvaluefiltericon": false,
-      "showoptionspage": false
+      "showoptionspage": true
     }
   },
   "options": {
     "pollingtimeinseconds": 10,
     "pollingintervallinseconds": 1,
     "lowerboundarypatientresult": 10,
-    "lowerboundarylocationresult": 3
+    "lowerboundarylocationresult": 1
   },
   "mock": {
     "terminology": false,
     "query": false,
     "result": false
   },
-  "stylesheet": "abideTheme",
+  "stylesheet": "sbaTheme",
   "fhirport": "8082",
   "dataset": "codex",
   "queryVersion": "v2"

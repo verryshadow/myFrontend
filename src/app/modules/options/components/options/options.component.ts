@@ -149,14 +149,15 @@ export class OptionsComponent implements OnInit {
         'Content-Type': 'codex/json',
         Accept: 'internal/json',
         'Access-Control-Allow-Origin': '*',
+        Cookie: 'JSESSIONID=node0v3dnl2dqawhlbymawm3cl7ib22.node0',
       }),
     }
     let url: string
     if (modus === 'translate') {
-      url = 'http://localhost:5000/query-translate'
+      url = 'http://localhost:5111/query-translate'
     }
     if (modus === 'sync') {
-      url = 'http://localhost:5000/query-sync'
+      url = 'http://localhost:5111/query-sync'
     }
 
     if (this.queryVersion === 'v1') {

@@ -12,13 +12,20 @@
       "PARAGRAPH2": "Mit einer Machbarkeitsanfrage (Feasibility) erfahren Forschende, wie viele Fälle für ihre Suchkriterien (Ein- und Ausschlusskriterien) in den Datenintegrationszentren der universitätsmedizinischen Standorte bundesweit vorhanden sind und für medizinische Forschungszwecke beantragt werden können.",
       "PARAGRAPH3": "Zur Formulierung der Abfrage stehen aktuell der Kerndatensatz der Medizininformatikinitiative und der COVID-19 spezifische Datensatz GECCO zur Verfügung."
     },
+    "SBATHEME": {
+      "HEADLINE": "Querying Number of Patients!",
+      "PARAGRAPH1": "This app offers you to query the number of patients from selected hospitals for later federated learning.",
+      "PARAGRAPH2": "",
+      "PARAGRAPH3": "We modiefied the GitHub Repos from: https://github.com/num-codex/"
+    },
+
     "NEWQUERY": {
       "HEADLINE": "New Query",
-      "TEXT": "Führen Sie eine Suche anhand Ihrer Ein- und Ausschlusskriterien durch"
+      "TEXT": "Perform a search based on your inclusion and exclusion criteria"
     },
     "MYQUERY": {
       "HEADLINE": "My Queries",
-      "TEXT": "Erhalten Sie eine Übersicht über Ihre bereits durchgeführten Suchanfragen"
+      "TEXT": "Get an overview of the searches you have saved"
     }
   },
   "LANGUAGE": {

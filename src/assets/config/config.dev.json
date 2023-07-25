@@ -14,7 +14,7 @@
     "clientId": "feasibility-gui"
   },
   "legal": {
-    "version": "0.9.0",
+    "version": "0.9.1",
     "copyrightOwner": "ABIDE Team"
   },
   "features": {
@@ -32,8 +32,8 @@
   "options": {
     "pollingtimeinseconds": 10,
     "pollingintervallinseconds": 1,
-    "lowerboundarypatientresult": 10,
-    "lowerboundarylocationresult": 3
+    "lowerboundarypatientresult": 20,
+    "lowerboundarylocationresult": 1
   },
   "mock": {
     "terminology": false,
@@ -43,5 +43,5 @@
   "stylesheet": "abideTheme",
   "fhirport": "8082",
   "dataset": "codex",
-  "queryVersion": "v2"
+  "queryVersion": "v1"
 }

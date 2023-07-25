@@ -3,7 +3,7 @@ FROM node:14.13.1-alpine3.12 AS build
 WORKDIR /usr/src/app
 COPY . .
 RUN npm install
-ARG ENVIRONMENT=deploy
+ARG ENVIRONMENT=develop
 RUN npm run build -- --configuration=${ENVIRONMENT}
 
 ### STAGE 2: Run ###

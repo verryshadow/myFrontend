@@ -1,46 +1,46 @@
 {
   "env": {
-    "name": "#{env_name}"
+    "name": "dev-test"
   },
   "api": {
-    "baseUrl": "#{api_baseUrl}"
+    "baseUrl": "/api"
   },
   "uiBackendApi": {
-    "baseUrl": "#{uiBackendApi_baseUrl}"
+    "baseUrl": "http://localhost:8090/api/v1"
   },
   "auth": {
-    "baseUrl": "#{auth_baseUrl}",
-    "realm": "#{auth_realm}",
-    "clientId": "#{auth_clientId}"
+    "baseUrl": "http://localhost:8080",
+    "realm": "codex-develop",
+    "clientId": "feasibility-gui"
   },
   "legal": {
-    "version": "#{legal_version}",
-    "copyrightOwner": "#{legal_copyrightOwner}"
+    "version": "0.9.1",
+    "copyrightOwner": "TEST CODEX Team"
   },
   "features": {
     "v2": {
-      "multiplevaluedefinitions": "#{features_v2_multiplevaluedefinitions}",
-      "multiplegroups": "#{features_v2_multiplegroups}",
-      "dependentgroups": "#{features_v2_dependentgroups}",
-      "timerestriction": "#{features_v2_timerestriction}"
+      "multiplevaluedefinitions": false,
+      "multiplegroups": false,
+      "dependentgroups": false,
+      "timerestriction": false
     },
     "extra": {
       "displayvaluefiltericon": false,
-      "showoptionspage": false
+      "showoptionspage": true
     }
   },
   "options": {
     "pollingtimeinseconds": 10,
     "pollingintervallinseconds": 1,
     "lowerboundarypatientresult": 10,
-    "lowerboundarylocationresult": 3
+    "lowerboundarylocationresult": 2
   },
   "mock": {
     "terminology": false,
     "query": false,
     "result": false
   },
-  "stylesheet": "abideTheme",
+  "stylesheet": "sbaTheme",
   "fhirport": "8082",
   "dataset": "codex",
   "queryVersion": "v2"

@@ -93,7 +93,7 @@ export class EditCriterionComponent implements OnInit, AfterViewChecked {
 
   getValueFilters(): ValueFilter[] {
     if (this.criterion.valueFilters) {
-      if (!this.featureService.useFeatureMultipleValueDefinitions()) {
+      if (!this.featureService.useFeatureMultipleValueDefinitions()) { // nur wenn "Multiple values per criteria" bei "Options" deaktiviert ist geht er ins If
         return this.criterion.valueFilters.length === 0 ? [] : [this.criterion.valueFilters[0]]
       }
 

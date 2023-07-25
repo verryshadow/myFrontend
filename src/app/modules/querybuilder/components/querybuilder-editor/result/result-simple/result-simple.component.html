@@ -3,7 +3,7 @@
     <div class="result-text">
       {{ 'RESULT.PATIENT_NUMBER' | translate }}:
       <span *ngIf="result; else showZeroPatients" class="number-of-patients">
-        {{ backend.obfuscateResult(result?.totalNumberOfPatients) }}
+        {{ result?.totalNumberOfPatientsRange }}
       </span>
       <ng-template #showZeroPatients>
         <span class="number-of-patients">0</span>
@@ -17,7 +17,7 @@
     ></fa-icon>
   </div>
   <num-button
-    *ngIf="result?.totalNumberOfPatients > 0 || result?.totalNumberOfPatients == 0"
+    *ngIf="result?.totalNumberOfPatients > 0"
     [type]="'primary'"
     (click)="openDialogResultDetails()"
     class="button-dialog-result-details"

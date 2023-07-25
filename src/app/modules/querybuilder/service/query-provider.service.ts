@@ -25,7 +25,10 @@ export class QueryProviderService {
   }
 
   public saveQueries(queries: Array<any>): void {
+    alert("joo")
+    this.storage.clear()
     this.storage.set(this.SAVE_QUERY_KEY, queries)
+
   }
   public loadQueries(): Array<any> {
     return this.storage.get(this.SAVE_QUERY_KEY)

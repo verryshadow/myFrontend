@@ -1,5 +1,6 @@
 export class QueryResult {
   totalNumberOfPatients: number
+  totalNumberOfPatientsRange: string
   queryId: string
 
   resultLines: QueryResultLine[]

@@ -14,6 +14,8 @@ export class FooterComponent implements OnInit, AfterViewInit {
   stylesheet: string
   urlSrc: string
   urlAlt: string
+  urlSrc2: string
+  urlAlt2: string
 
   constructor(
     private appConfig: AppConfigService,

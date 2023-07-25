@@ -37,6 +37,10 @@ export class BackendService {
     return this.http.get<Array<CategoryEntry>>(this.createUrl(BackendService.PATH_ROOT_ENTRIES))
   }
 
+  public getLowerBoundaryPatient(): number{
+    return this.lowerBoundaryPatient;
+  }
+
   public getTerminolgyTree(id: string): Observable<TerminologyEntry> {
     if (this.feature.mockTerminology()) {
       return of(this.mockBackendDataProvider.getTerminologyEntry(id))
@@ -80,6 +84,7 @@ export class BackendService {
     if (this.feature.mockResult()) {
       const result = {
         totalNumberOfPatients: Math.floor(Math.random() * 1000),
+        totalNumberOfPatientsRange: Math.floor(Math.random() * 1000).toString(),
         queryId: '12345',
         resultLines: [
           { siteName: 'Standort 1', numberOfPatients: 351 },
@@ -88,7 +93,7 @@ export class BackendService {
           { siteName: 'Standort 4', numberOfPatients: 0 },
         ],
       }
-
+      alert("this just a mock and its not real")
       return of(result)
     }
 
@@ -113,12 +118,12 @@ export class BackendService {
 
   obfuscateResult(result: number): string {
     if (result === 0) {
-      return '0'
+      return 'N/A'
     } else {
-      if (result <= this.lowerBoundaryPatient) {
+      if (result < this.lowerBoundaryPatient) {
         return '< ' + this.lowerBoundaryPatient.toString()
       } else {
-        return result.toString()
+        return "" + result + "-" + (10 + result)
       }
     }
   }

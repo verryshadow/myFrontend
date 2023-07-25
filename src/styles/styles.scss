@@ -15,6 +15,11 @@
   @include custom-material_themed($num-portal-webapp-theme-codex);
 }
 
+.sbaTheme {
+  @include angular-material-theme($num-portal-webapp-theme-sba);
+  @include custom-material_themed($num-portal-webapp-theme-sba);
+}
+
 .abideTheme {
   @include angular-material-theme($num-portal-webapp-theme-abide);
   @include custom-material_themed($num-portal-webapp-theme-abide);

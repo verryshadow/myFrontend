@@ -74,6 +74,19 @@ $mat-light-theme-abide-background: mat-light-theme-background(
       num-typography: $num-typography
     );
   }
+  @if ($theme == 'sba') {
+    @return (
+      name: 'sba',
+      primary: $num-portal-webapp-primary-codex,
+      accent: $num-portal-webapp-accent-codex,
+      warn: $num-portal-webapp-additional,
+      additional: $num-portal-webapp-additional,
+      is-dark: false,
+      foreground: $mat-light-theme-foreground,
+      background: $mat-light-theme-background,
+      num-typography: $num-typography
+    );
+  }
   @if ($theme == 'abide') {
     @return (
       name: 'abide',
@@ -91,4 +104,5 @@ $mat-light-theme-abide-background: mat-light-theme-background(
 
 $num-portal-webapp-theme: num-theme-builder('primary');
 $num-portal-webapp-theme-codex: num-theme-builder('codex');
+$num-portal-webapp-theme-sba: num-theme-builder('sba');
 $num-portal-webapp-theme-abide: num-theme-builder('abide');

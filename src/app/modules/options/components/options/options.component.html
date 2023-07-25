@@ -76,6 +76,9 @@
       <mat-radio-button class="example-radio-button" value="abideTheme"
         >Abide Style</mat-radio-button
       >
+      <mat-radio-button class="example-radio-button" value="sbaTheme"
+        >SBA Style</mat-radio-button
+      >
     </mat-radio-group>
   </div>
   <div fxLayout="column" fxLayoutAlign="space-around" class="maingroup">
@@ -129,13 +132,13 @@
     >
   </div>
   <div class="maingroup">
-    <div>localhost:5000/query-translate</div>
+    <div>localhost:5111/query-translate</div>
     <textarea id="postman-query-translate" name="query-textfield" rows="2" cols="100">{{
       postmanTranslate | json
     }}</textarea>
   </div>
   <div class="maingroup">
-    <div>localhost:5000/query-sync</div>
+    <div>localhost:5111/query-sync</div>
     <textarea id="postman-query-sync" name="query-textfield" rows="2" cols="100">{{
       postmanSync | json
     }}</textarea>

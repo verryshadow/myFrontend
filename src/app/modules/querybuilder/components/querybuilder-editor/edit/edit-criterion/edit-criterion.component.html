@@ -1,8 +1,8 @@
 <mat-card class="mat-elevation-z3">
   <mat-card-header>
     <h4>
-      {{ criterion.display }}
-      <em *ngFor="let termcode of criterion.termCodes">({{ termcode?.code }})</em>
+      {{ criterion.display }}  <!-- e.g. Alter/Schwangerschaft/... NICHT CODE-->
+      <em *ngFor="let termcode of criterion.termCodes">({{ termcode?.code }})</em> <!-- e.g. Alter/Schwangerschaft/... CODE-->
     </h4>
   </mat-card-header>
   <mat-card-content>
