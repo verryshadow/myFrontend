@@ -27,7 +27,7 @@ export class EditValueFilterComponent implements OnInit {
   selectedConceptsAsJson: Set<string> = new Set()
   quantityFilterOption: string
   // TODO: Try using enum
-  quantityFilterOptions: Array<string> = ['EQUAL', 'LESS_THAN', 'GREATER_THAN', 'BETWEEN']
+  quantityFilterOptions: Array<string> = ['EQUAL', 'LESS_THAN', 'LESS_OR_EQUAL', 'GREATER_THAN', 'GREATER_OR_EQUAL', 'BETWEEN']
 
   constructor() {}
 
@@ -63,9 +63,11 @@ export class EditValueFilterComponent implements OnInit {
       case Comparator.EQUAL:
         return 'EQUAL'
       case Comparator.GREATER_OR_EQUAL:
+        return 'GREATER_OR_EQUAL'
       case Comparator.GREATER_THAN:
         return 'GREATER_THAN'
       case Comparator.LESS_OR_EQUAL:
+        return 'LESS_OR_EQUAL'
       case Comparator.LESS_THAN:
         return 'LESS_THAN'
       default:
@@ -104,6 +106,12 @@ export class EditValueFilterComponent implements OnInit {
           break
         case 'GREATER_THAN':
           this.filter.comparator = Comparator.GREATER_THAN
+          break
+        case 'LESS_OR_EQUAL':
+          this.filter.comparator = Comparator.LESS_OR_EQUAL
+          break
+        case 'GREATER_OR_EQUAL':
+          this.filter.comparator = Comparator.GREATER_OR_EQUAL
           break
       }
     }

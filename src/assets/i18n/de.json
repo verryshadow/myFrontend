@@ -111,6 +111,8 @@
       "OPERATOR": "Operator",
       "AND": "und",
       "EQUAL": "gleich",
+      "LESS_OR_EQUAL": "kleiner gleich",
+      "GREATER_OR_EQUAL": "größer gleich",
       "LESS_THAN": "kleiner",
       "GREATER_THAN": "größer",
       "BETWEEN": "zwischen",
